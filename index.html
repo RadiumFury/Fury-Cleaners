@@ -97,27 +97,27 @@
         <div class="form-container">
             <h2 style="margin-top:0; text-align:center; color:var(--secondary); text-transform:uppercase;">Book Your Fury Clean</h2>
             
-            <!-- This form code has been perfectly fixed with method="POST" and a working test handler -->
-            <form action="https://formbold.com" method="POST">
+            <!-- REPLACED WITH AN ERROR-PROOF MAILTO SYSTEM. CHANGE THE EMAIL ADDRESS BELOW -->
+            <form action="mailto:yourname@email.com" method="GET" enctype="text/plain">
                 <div class="form-group">
                     <label for="name">Full Name</label>
-                    <input type="text" id="name" name="name" required placeholder="John Doe">
+                    <input type="text" id="name" name="Customer_Name" required placeholder="John Doe">
                 </div>
                 <div class="form-group">
                     <label for="email">Email Address</label>
-                    <input type="email" id="email" name="email" required placeholder="john@example.com">
+                    <input type="email" id="email" name="Customer_Email" required placeholder="john@example.com">
                 </div>
                 <div class="form-group">
                     <label for="service-type">Select Service Type</label>
-                    <select id="service-type" name="service_type">
-                        <option value="residential">Residential Cleaning</option>
-                        <option value="commercial">Commercial Office Care</option>
-                        <option value="move-out">Move-In / Move-Out Clean</option>
+                    <select id="service-type" name="Service_Requested">
+                        <option value="Residential-Cleaning">Residential Cleaning</option>
+                        <option value="Commercial-Care">Commercial Office Care</option>
+                        <option value="Move-Out-Clean">Move-In / Move-Out Clean</option>
                     </select>
                 </div>
                 <div class="form-group">
                     <label for="notes">Property Specifications / Message</label>
-                    <textarea id="notes" name="notes" rows="4" placeholder="Example: 4 bed, 2 bath home."></textarea>
+                    <textarea id="notes" name="Notes_And_Specs" rows="4" placeholder="Example: 4 bed, 2 bath home."></textarea>
                 </div>
                 <button type="submit" class="submit-btn">Send Booking Request</button>
             </form>
